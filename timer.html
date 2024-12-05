@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Council Meeting Timer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e531b6dd4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="timer">
+        <h1>Timer</h1>
+        <br>
+        <div class="columns">
+
+            <div class="column is-one-half">
+                <div class="box" id="minutesBox">
+                    <input class="input" type="number" min="0" value="7" id="minutes">
+                    <h1>Minutes</h1>
+                </div>
+            </div>
+
+            <div class = "column is-one-half">
+                <div class="box" id="secondsBox">
+                    <input class="input" type="number" min="0" max="59" value="0" id="seconds">
+                    <h1>Seconds</h1>
+                </div>
+            </div>
+        </div>
+
+        <button class="button is-large is-success" style = "display: inline-block;" id="startButton">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="button is-large is-danger" style = "display: inline-block;" id="stopButton">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+        <button class="button is-large is-warning" style = "display: inline-block;" id="resetButton">
+            Reset
+        </button>
+    </div>
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

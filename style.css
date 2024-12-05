@@ -1,0 +1,24 @@
+#timer {
+    height: 40vh;
+    width: 95vw;
+    margin-left: 2vw;
+    justify-items: center;
+    font-size: 36px
+}
+
+#minutesBox{
+    width: 100%;
+    height: 100%;
+}
+
+#secondsBox{
+    width: 100%;
+    height: 100%;
+}
+
+input[type="number"]
+{
+    font-size:36px;
+}
+
+
