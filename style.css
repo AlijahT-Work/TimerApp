@@ -1,9 +1,8 @@
 #timer {
-    height: 40vh;
+    height: 60vh;
     width: 95vw;
     margin-left: 2vw;
     justify-items: center;
-    font-size: 36px
 }
 
 #minutesBox{
@@ -18,7 +17,12 @@
 
 input[type="number"]
 {
-    font-size:36px;
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
 }
 
+h1{
+    font-size: 50px;
+}
 

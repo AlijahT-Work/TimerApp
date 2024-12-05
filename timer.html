@@ -12,21 +12,19 @@
 
 <body>
     <div id="timer">
-        <h1>Timer</h1>
+        <h1><i class="fa-solid fa-clock"></i></h1>
         <br>
         <div class="columns">
 
-            <div class="column is-one-half">
+            <div class="column is-one-quarter is-offset-one-quarter">
                 <div class="box" id="minutesBox">
                     <input class="input" type="number" min="0" value="7" id="minutes">
-                    <h1>Minutes</h1>
                 </div>
             </div>
 
-            <div class = "column is-one-half">
+            <div class = "column is-one-quarter ">
                 <div class="box" id="secondsBox">
                     <input class="input" type="number" min="0" max="59" value="0" id="seconds">
-                    <h1>Seconds</h1>
                 </div>
             </div>
         </div>
@@ -38,7 +36,7 @@
             <i class="fa-solid fa-pause"></i>
         </button>
         <button class="button is-large is-warning" style = "display: inline-block;" id="resetButton">
-            Reset
+            <i class="fa-solid fa-rotate-left"></i>
         </button>
     </div>
 
