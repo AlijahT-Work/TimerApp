@@ -30,10 +30,16 @@ h1 {
     font-size: 12vw;
 }
 
+#buttons{
+    justify-items: baseline;
+    margin: auto;
+}
+
 button {
     display: block;
     font-size: calc(2vw + 1vh);
     border-radius: 12px;
+    margin-bottom: 2vh;
     transition-duration: 0.4s;
     color: white;
 }
@@ -41,7 +47,6 @@ button {
 #startButton {
     background-color: green;
     padding: 14px 40px;
-    margin-right: 1vw;
 }
 
 #startButton:hover {
@@ -51,8 +56,7 @@ button {
 
 #stopButton {
     background-color: red;
-    padding: 14px 45px;
-    margin-right: 1vw;
+    padding: 14px 42px;
 }
 
 #stopButton:hover {
@@ -62,7 +66,7 @@ button {
 
 #resetButton {
     background-color: orange;
-    padding: 14px 30px;
+    padding: 12px 36px;
 }
 
 #resetButton:hover {

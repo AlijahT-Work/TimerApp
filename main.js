@@ -54,11 +54,17 @@ function Decrement() {
             minutes.style.color = "red";
             seconds.style.color = "red";
         }
+
+        if(seconds.value < 10 && seconds.value >=0){
+            seconds.value = 0 + seconds.value
+        }
+
         if(secs < -59){
             secs = 0;
             seconds.value = 0;
             minutes.value--;
         }
+
         secs--;
     }
 };
