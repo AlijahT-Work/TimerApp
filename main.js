@@ -47,15 +47,19 @@ function Decrement() {
             seconds.value = getseconds();
         }
         if (mins < 1) {
+            minutes.style.color = "yellow";
+            seconds.style.color = "yellow";
+        }
+        if (mins <= 0 && secs <= 0){
             minutes.style.color = "red";
             seconds.style.color = "red";
         }
-        if (mins == 0 && secs == 0) {
-            timerOff();
+        if(secs < -59){
+            secs = 0;
+            seconds.value = 0;
+            minutes.value--;
         }
-        else {
-            secs--;
-        }
+        secs--;
     }
 };
 
