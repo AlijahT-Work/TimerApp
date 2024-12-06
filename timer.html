@@ -11,33 +11,58 @@
 </head>
 
 <body>
-    <div id="timer">
-        <h1><i class="fa-solid fa-clock"></i></h1>
-        <br>
-        <div class="columns">
+
+    <div class="box" id="timer">
+        <div class="columns" id="columnSec">
 
             <div class="column is-one-quarter is-offset-one-quarter">
                 <div class="box" id="minutesBox">
-                    <input class="input" type="number" min="0" value="7" id="minutes">
+                    <input class="input" type="number" min="0" value="3" id="minutes">
                 </div>
             </div>
 
-            <div class = "column is-one-quarter ">
+            <div id="colon">
+                :
+            </div>
+
+            <div class="column is-one-quarter ">
                 <div class="box" id="secondsBox">
                     <input class="input" type="number" min="0" max="59" value="0" id="seconds">
                 </div>
             </div>
+
         </div>
 
-        <button class="button is-large is-success" style = "display: inline-block;" id="startButton">
+        <button id="startButton">
             <i class="fa-solid fa-play"></i>
         </button>
-        <button class="button is-large is-danger" style = "display: inline-block;" id="stopButton">
+        <button id="stopButton">
             <i class="fa-solid fa-pause"></i>
         </button>
-        <button class="button is-large is-warning" style = "display: inline-block;" id="resetButton">
+        <button id="resetButton">
             <i class="fa-solid fa-rotate-left"></i>
         </button>
+    </div>
+
+    <div class="box" id="rules">
+
+        <h1>Rules for Privilege of The Floor</h1>
+        <br>
+        <p> Per <a href="https://ecode360.com/37395947" target="_blank">Chapter A-321, Section 3-B</a> The rules
+            are as follows:
+            <br>
+            <br>
+        <ol type="i">
+            <li>A speaker's time shall be limited to three minutes, which time may be extended, upon request of
+                the speaker, at the Mayor's discretion;</li>
+            <br>
+            <li>Speakers are to limit the content of their comments to matters concerning which City Council, on
+                behalf of the City, has discretion or control; and</li>
+            <br>
+            <li>Speakers shall not engage in politicking for public office.</li>
+        </ol>
+        </p>
+
     </div>
 
 </body>

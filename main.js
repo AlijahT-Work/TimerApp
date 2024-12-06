@@ -35,7 +35,6 @@ function pressPlay() {
 function Decrement() {
 
     if (timer == true) {
-        console.log(secs);
 
         let seconds = document.getElementById("seconds");
         let minutes = document.getElementById("minutes");
@@ -51,10 +50,8 @@ function Decrement() {
             minutes.style.color = "red";
             seconds.style.color = "red";
         }
-        if (mins == 0 && secs < 0) {
-            timer = false;
-            alert('Time Is Up');
-            reset();
+        if (mins == 0 && secs == 0) {
+            timerOff();
         }
         else {
             secs--;
