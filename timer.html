@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Council Meeting Timer</title>
-    <link rel = "icon" href = "clock-solid.svg">
-    <link rel = "shortcut icon" href= "clock-solid.svg">
+    <link rel="icon" href="clock-solid.svg">
+    <link rel="shortcut icon" href="clock-solid.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e531b6dd4b.js" crossorigin="anonymous"></script>
@@ -14,60 +14,64 @@
 
 <body>
 
-    <div class="box" id="timer">
-        <div class="columns" id="columnSec">
-            <div class="column is-one-quarter is-offset-one-quarter">
-                
-                <input class="input" type="number" min="0" value="3" id="minutes">
-                
+    <div class="fixed-grid has-1-cols">
+        <div class="cell" id="timer">
+            <div class="columns" id="columnSec">
+                <div class="column is-one-quarter is-offset-one-quarter" id="minutesCol">
+                    <input class="input" type="number" min="0" value="3" id="minutes">
+                </div>
+
+                <img src="Colon.png" id="colon">
+
+                <div class="column is-one-quarter" id="secondsCol">
+                    <input class="input" type="number" min="0" max="59" value="00" id="seconds">
+                </div>
+
+                <div class="column is-one-quarter" id=buttons>
+
+                    <button id="startButton">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="stopButton">
+                        <i class="fa-solid fa-pause"></i>
+                    </button>
+                    <button id="resetButton">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+
+                </div>
             </div>
+        </div>
 
-            <div id="colon">
-                :
-            </div>
+        <div class="cell" id="rulesCell">
+            <div class="box" id="rulesBox">
 
-            <div class="column is-one-quarter ">
-
-                <input class="input" type="number" min="0" max="59" value="00" id="seconds">
-
-            </div>
-
-            <div class="column is-one-quarter" id = buttons>
-
-                <button id="startButton">
-                    <i class="fa-solid fa-play"></i>
-                </button>
-                <button id="stopButton">
-                    <i class="fa-solid fa-pause"></i>
-                </button>
-                <button id="resetButton">
-                    <i class="fa-solid fa-rotate-left"></i>
-                </button>
-
+                <h1>Rules for Privilege of The Floor</h1>
+                <br>
+                <div id="rulesText">
+                    <p> Per <a href="https://ecode360.com/37395947" target="_blank">Chapter A-321, Section 3-B</a>,
+                        The
+                        rules
+                        are as follows:
+                        <br>
+                        <br>
+                    <ol type="i">
+                        <li>A speaker's time shall be limited to three minutes, which time may be extended, upon
+                            request of
+                            the speaker, at the Mayor's discretion;</li>
+                        <br>
+                        <li>Speakers are to limit the content of their comments to matters concerning which City
+                            Council, on
+                            behalf of the City, has discretion or control; and</li>
+                        <br>
+                        <li>Speakers shall not engage in politicking for public office.</li>
+                    </ol>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="box" id="rules">
-
-        <h1>Rules for Privilege of The Floor</h1>
-        <br>
-        <p> Per <a href="https://ecode360.com/37395947" target="_blank">Chapter A-321, Section 3-B</a>, The rules
-            are as follows:
-            <br>
-            <br>
-        <ol type="i">
-            <li>A speaker's time shall be limited to three minutes, which time may be extended, upon request of
-                the speaker, at the Mayor's discretion;</li>
-            <br>
-            <li>Speakers are to limit the content of their comments to matters concerning which City Council, on
-                behalf of the City, has discretion or control; and</li>
-            <br>
-            <li>Speakers shall not engage in politicking for public office.</li>
-        </ol>
-        </p>
-
-    </div>
 
 </body>
 

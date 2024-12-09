@@ -1,9 +1,12 @@
 let mins;
 let secs;
 let timer = false;
+let alarmPlayed = false;
 let startButton = document.getElementById("startButton");
 let stopButton = document.getElementById("stopButton");
 let resetButton = document.getElementById("resetButton");
+
+const alarm = new Audio('alarm.ogg');
 
 function timerOn() {
     timer = true
@@ -51,6 +54,11 @@ function Decrement() {
         if (mins <= 0 && secs <= 0) {
             minutes.style.color = "red";
             seconds.style.color = "red";
+
+            if (alarmPlayed == false) {
+                alarm.play();
+                alarmPlayed = true;
+            }
         }
 
         if (seconds.value < 10 && seconds.value >= 0) {
