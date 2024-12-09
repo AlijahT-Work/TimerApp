@@ -5,8 +5,6 @@ let startButton = document.getElementById("startButton");
 let stopButton = document.getElementById("stopButton");
 let resetButton = document.getElementById("resetButton");
 
-const audio = new Audio('path/to/your/sound.mp3');
-
 function timerOn() {
     timer = true
 
@@ -50,16 +48,16 @@ function Decrement() {
             minutes.style.color = "yellow";
             seconds.style.color = "yellow";
         }
-        if (mins <= 0 && secs <= 0){
+        if (mins <= 0 && secs <= 0) {
             minutes.style.color = "red";
             seconds.style.color = "red";
         }
 
-        if(seconds.value < 10 && seconds.value >=0){
+        if (seconds.value < 10 && seconds.value >= 0) {
             seconds.value = 0 + seconds.value
         }
 
-        if(secs < -59){
+        if (secs < -59) {
             secs = 0;
             seconds.value = 0;
             minutes.value--;
